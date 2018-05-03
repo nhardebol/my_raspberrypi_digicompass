@@ -1,4 +1,13 @@
 Intro
-------
+=========
 
-Welcome to my Github project aiming for the design of a digital compass with my Raspberry Pi Zero.
+Welcome to my Github project aiming for the design of a digital compass with my Raspberry Pi Zero W. The W stands for the Zero version with Wifi.
+
+Goal 1: make headless first time connection to my raspberry pi
+---------------------------------------------------------------
+
+
+
+Goal: as proof see the screen shot of my console: a pi@raspberry shh connection.
+
+![alt tag](https://github.com/nhardebol/my_raspberrypi_digicompass/docs/images/ssh_connect2rpi.png "ssh connection")
