@@ -6,6 +6,33 @@ Welcome to my Github project aiming for the design of a digital compass with my 
 Goal 1: make headless first time connection to my raspberry pi
 ---------------------------------------------------------------
 
+1. Download tan zipped image file of the latest Raspbian OS from the official website https://www.raspberrypi.org/downloads/raspbian/
+
+I did download Raspbian Stretch with desktop, Version: April 2018, Release date: 2018-04-18, Kernel version: 4.14.
+
+I read that some of the correct instructions on a proper setup for headless access differ per version of Raspian. I tried the below for "Stretch" and it was successfull.
+
+2. I used https://etcher.io/  to burn the image to the SD Drive. For that I used an SD USB adapter, that I opened on my linux machine and from which I burned the image.
+
+Then mount the SD card which show up as two drives: (1) a boot partition and (2) a partion ...
+
+3. Make a file named wpa_supplicant.conf in the fboot partition.
+
+4. Add the following content to the file wpa_supplicant.conf:
+ountry=GB
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+   ssid="my-wifi-ssid"
+   psk="super-secret-password"
+}
+
+5. To cover up ymy "super-secret-password" I executed << >> 
+
+and got a many-digit code line that I added after psk=  In this case without " "
+
+6. I also added an empty file ssh in the same boot folder by typing:
+touch ssh
 
 
 Goal: as proof see the screen shot of my console: a pi@raspberry shh connection.
