@@ -10,16 +10,17 @@ Goal 1: make headless first time connection to my raspberry pi
 
 I did download Raspbian Stretch with desktop, Version: April 2018, Release date: 2018-04-18, Kernel version: 4.14.
 
-I read that some of the correct instructions on a proper setup for headless access differ per version of Raspian. I tried the below for "Stretch" and it was successfull.
+I read that some of the correct instructions on a proper setup for headless access differ per version of Raspian. 
+I tried the below for "Stretch" and it was successfull. I partially followed the instructions from https://www.raspberrypi.org/forums/viewtopic.php?t=176147
 
 2. I used https://etcher.io/  to burn the image to the SD Drive. For that I used an SD USB adapter, that I opened on my linux machine and from which I burned the image.
 
 Then mount the SD card which show up as two drives: (1) a boot partition and (2) a partion ...
 
-3. Make a file named wpa_supplicant.conf in the fboot partition.
+3. Make a file named wpa_supplicant.conf in the boot partition.
 
 4. Add the following content to the file wpa_supplicant.conf:
-ountry=GB
+Country=NL
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 network={
@@ -27,14 +28,28 @@ network={
    psk="super-secret-password"
 }
 
-5. To cover up ymy "super-secret-password" I executed << >> 
+5. To cover up ymy "super-secret-password" I executed:
+<wpa_passphrase <SSID> <SSID password> 
 
-and got a many-digit code line that I added after psk=  In this case without " "
+and got a many-digit line that I added after psk=  In this case without " "
+
+I did change the SSID of my wifi network because I head the impression that the blank spaces in the name were not accepted.
 
 6. I also added an empty file ssh in the same boot folder by typing:
 touch ssh
 
 
-Goal: as proof see the screen shot of my console: a pi@raspberry shh connection.
+Goal ACHIEVED: as proof see the screen shot of my console: a pi@raspberry shh connection.
 
 <img src="images/ssh_connect2rpi.png" alt="hi" class="inline"/>
+
+GOAL 2: Run a Python script on the Raspberry Pi that establishes a Blootooth connection and sends a text string
+----------------------------------------------
+
+1. Install the Bluetooth library for python "pyBluez" with the command:
+      sudo pip3 install pybluez
+      
+  To check I launced python3 and did:
+      import bluetooth
+  
+
