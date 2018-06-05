@@ -70,7 +70,7 @@ GOAL 6: Select a IMU:
 --------------------------------------------
 GOAL 10: Install the digital compass module
 --------------------------------------------
-
+  - http://www.physi.cz/uploads/2/0/5/6/20564332/9dof.pdf With instruction of the the IMU connecting to the the raspberry pi and its configuartion adn basic checks and coding
      
      - On magnetic distortions (from http://www.embedded-computing.com/embedded-computing-design/basics-of-6dof-and-9dof-sensor-fusion):
      "magnetometer measurements are susceptible to distortion and errors that can impact calibration and correction in the final environment. Indeed, even if the magnetometer has been thoroughly calibrated 
