@@ -60,7 +60,12 @@ GOAL 6: Select a IMU:
      - IMU stands for Inertial Measurement Unit.
      - 9 DOF stands for nine degrees of freedom which involves an Accelerometer, Gyroscope and Magnetometer.
      
-* also a 10DOF exists with the addition of a barometer: https://www.adafruit.com/product/1604
+* also an Adafruit 10DOF exists with the addition of a barometer: https://www.adafruit.com/product/1604
+
+* Another brand iwth an IMU combined with GPS: http://ozzmaker.com/product/berrygps-imu/
+
+--Decision A: an all-in-one IMU + GPS or a separate GPS?
+ In cae of a separate gps: https://www.sossolutions.nl/catalogsearch/result/?q=gps
 
 --------------------------------------------
 GOAL 10: Install the digital compass module
