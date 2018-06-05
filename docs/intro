@@ -52,14 +52,20 @@ GOAL 2: Run a Python script on the Raspberry Pi that establishes a Blootooth con
       
   To check I launced python3 and did:
       import bluetooth
+      
+---------------------------
+GOAL 6: Select a IMU:
+---------------------------
+* https://learn.adafruit.com/adafruit-9-dof-imu-breakout  : 
+     - IMU stands for Inertial Measurement Unit.
+     - 9 DOF stands for nine degrees of freedom which involves an Accelerometer, Gyroscope and Magnetometer.
+     
+* also a 10DOF exists with the addition of a barometer: https://www.adafruit.com/product/1604
 
 --------------------------------------------
 GOAL 10: Install the digital compass module
 --------------------------------------------
 
-* https://learn.adafruit.com/adafruit-9-dof-imu-breakout  : 
-     - IMU stands for Inertial Measurement Unit.
-     - 9 DOF stands for nine degrees of freedom which involves an Accelerometer, Gyroscope and Magnetometer.
      
      - On magnetic distortions (from http://www.embedded-computing.com/embedded-computing-design/basics-of-6dof-and-9dof-sensor-fusion):
      "magnetometer measurements are susceptible to distortion and errors that can impact calibration and correction in the final environment. Indeed, even if the magnetometer has been thoroughly calibrated 
