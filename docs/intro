@@ -53,6 +53,37 @@ GOAL 2: Run a Python script on the Raspberry Pi that establishes a Blootooth con
   To check I launced python3 and did:
       import bluetooth
       
+------------------------------------------------------------------------      
+GOAL 4: Connecting the Featherwing OLED to the Raspberrry Pi
+------------------------------------------------------------------------
+https://cdn-learn.adafruit.com/downloads/pdf/adafruit-oled-featherwing.pdf
+
+op featherwings OLED 128x32:
+16 pinnen links, 1e pin bij knop C
+2e pin links is de 3.3V
+4e pin links is ground GND
+
+12 pinnen rechts, 1e pin onder reset button
+9,10, 11 buttons A,B,C pins
+11/12 pin de SCL/SDA
+
+Pi 3.3V to OLED VIN
+Pi GND to OLED GND
+Pi SCL to OLED SCL
+Pi SDA to OLED SDA
+Pi GPIO4 to OLED RST (or any available GPIO pin)
+
+https://learn.adafruit.com/micropython-hardware-ssd1306-oled-display/tdicola-hardware
+https://www.google.com/search?q=raspberry+pi+zero+ground+pin&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjlgt6gtp3gAhURKFAKHXNhCiUQ_AUIDigB&biw=1280&bih=558&dpr=2#imgrc=mocXwnHd6T4UpM:
+
+
+
+-----------------------------------------------
+GOAL 5: Printing to OLED with Python code
+-----------------------------------------------
+https://cdn-learn.adafruit.com/downloads/pdf/adafruit-oled-featherwing.pdf
+https://learn.adafruit.com/adafruit-oled-featherwing/circuitpython-and-python-usage
+
 ---------------------------
 GOAL 6: Select a IMU:
 ---------------------------
