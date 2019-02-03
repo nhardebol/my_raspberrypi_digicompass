@@ -65,7 +65,23 @@ op featherwings OLED 128x32:
 
 12 pinnen rechts, 1e pin onder reset button
 9,10, 11 buttons A,B,C pins
-11/12 pin de SCL/SDA
+11e pin de SCL
+12e pin de SDA
+
+Op de rasperberry pi:
+20 bins binnen en 20 pins buitenkant
+links, boven de HDMI kabel en SD kaart
+1e pin, links boven 3.3 V
+1e & 2e pin rechts boven 5V
+2e pin links - SDA (BCM2)
+3e pin links - SCL (BCM3)
+4e pin links - 
+5e pin links - GND
+9e pin links 3.3 V power
+13e pin links GND
+20e pin links GND
+
+
 
 Pi 3.3V to OLED VIN
 Pi GND to OLED GND
